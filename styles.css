@@ -1,8 +1,40 @@
+@font-face {
+  font-family: "Monument Extended";
+  src: url("assets/fonts/MonumentExtended-Ultralight.otf") format("opentype");
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monument Extended";
+  src: url("assets/fonts/MonumentExtended-Regular.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monument Extended";
+  src: url("assets/fonts/MonumentExtended-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monument Extended";
+  src: url("assets/fonts/MonumentExtended-Ultrabold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+
 :root {
   --ink: #080810;
   --paper: #ffffff;
   --violet: #4019e4;
-  --display: "Arial Black", "Arial Narrow", Arial, sans-serif;
+  --display: "Monument Extended", "Arial Black", Arial, sans-serif;
   --sans: Inter, Arial, Helvetica, sans-serif;
 }
 
@@ -139,8 +171,6 @@ a {
   align-items: flex-start;
   justify-content: center;
   gap: 30px;
-  transform: scaleX(1.15);
-  transform-origin: top right;
 }
 
 .desktop-nav a,
@@ -151,7 +181,7 @@ a {
 .section-links,
 .mobile-menu__links {
   font-family: var(--display);
-  font-weight: 900;
+  font-weight: 400;
 }
 
 .desktop-nav a {
@@ -200,8 +230,6 @@ a {
   line-height: 1.25;
   text-transform: uppercase;
   white-space: nowrap;
-  transform: scaleX(1.25);
-  transform-origin: left;
 }
 
 .hero h1 {
@@ -210,8 +238,6 @@ a {
   font-size: 90px;
   letter-spacing: -0.05em;
   line-height: 1.18;
-  transform: scaleX(1.55);
-  transform-origin: left;
 }
 
 .events {
@@ -367,10 +393,6 @@ a {
   line-height: 1;
 }
 
-.event-action > span:last-child {
-  transform: scaleX(1.12);
-}
-
 .event-action--entry {
   grid-column: 2;
 }
@@ -415,8 +437,6 @@ a {
 
 .section-links span {
   display: inline-block;
-  transform: scaleX(1.25);
-  transform-origin: left;
 }
 
 .site-footer,
@@ -605,8 +625,6 @@ a {
     line-height: 1.25;
     text-decoration: none;
     text-transform: uppercase;
-    transform: scaleX(1.25);
-    transform-origin: left;
   }
 
   .mobile-menu__footer {
@@ -872,7 +890,7 @@ a {
 .load-more button,
 .filter-tabs button {
   font-family: var(--display);
-  font-weight: 900;
+  font-weight: 400;
 }
 
 .page-hero h1 {
@@ -881,8 +899,6 @@ a {
   font-size: 60px;
   letter-spacing: -0.02em;
   line-height: 1.18;
-  transform: scaleX(1.12);
-  transform-origin: left;
 }
 
 .page-lead {
@@ -1199,7 +1215,9 @@ a {
 
 .gallery-card h2 {
   margin: 2px 0 0;
+  font-family: var(--sans);
   font-size: 22px;
+  font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.4;
 }
