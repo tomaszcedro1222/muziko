@@ -35,3 +35,19 @@ document.addEventListener('keydown', (event) => {
 window.addEventListener('resize', () => {
   if (window.innerWidth > 800) setMenu(false);
 });
+
+document.querySelectorAll('.filter-tabs').forEach((tabs) => {
+  tabs.addEventListener('click', (event) => {
+    const button = event.target.closest('button');
+    if (!button) return;
+
+    tabs.querySelectorAll('button').forEach((item) => item.classList.remove('is-selected'));
+    button.classList.add('is-selected');
+
+    if (!tabs.classList.contains('gallery-tabs')) return;
+    const filter = button.dataset.filter;
+    document.querySelectorAll('.gallery-card').forEach((card) => {
+      card.classList.toggle('is-hidden', filter !== 'all' && card.dataset.kind !== filter);
+    });
+  });
+});
