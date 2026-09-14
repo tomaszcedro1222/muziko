@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080810" />
+    <meta
+      name="description"
+      content="Muziko de nia tempo — spotkania z muzyką współczesną w Białymstoku i na Podlasiu."
+    />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Muziko de nia tempo</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <div class="artwork artwork--hero" aria-hidden="true">
+        <img src="assets/motif.png" alt="" />
+      </div>
+      <div class="artwork artwork--secondary" aria-hidden="true">
+        <img src="assets/motif.png" alt="" />
+      </div>
+      <div class="top-fade" aria-hidden="true">
+        <img src="assets/top-fade.png" alt="" />
+      </div>
+
+      <header class="site-header">
+        <a class="brand" href="#start" aria-label="Muziko de nia tempo — strona główna">
+          <img src="assets/figma-logo-desktop.svg" alt="Muziko de nia tempo" />
+        </a>
+
+        <nav class="desktop-nav" aria-label="Główna nawigacja">
+          <a href="#program">Program</a>
+          <a href="#o-festiwalu">O festiwalu</a>
+          <a href="#archiwum">Archiwum</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#informacje">Informacje<br />praktyczne</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
+
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <img class="menu-button__open" src="assets/menu.svg" alt="" />
+          <img class="menu-button__close" src="assets/figma-close.svg" alt="" />
+          <span class="sr-only">Otwórz menu</span>
+        </button>
+      </header>
+
+      <nav class="mobile-menu" id="mobile-menu" aria-hidden="true" aria-label="Menu mobilne">
+        <div class="mobile-menu__links">
+          <a href="#program">Program</a>
+          <a href="#o-festiwalu">O festiwalu</a>
+          <a href="#archiwum">Archiwum</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#informacje">Informacje<br />praktyczne</a>
+          <a href="#kontakt">Kontakt</a>
+        </div>
+        <div class="mobile-menu__footer">
+          <div class="foundation">Fundacja<br />Armonia<br />dell’arte</div>
+          <a href="#kontakt">Kontakt</a>
+          <a href="#facebook">Facebook</a>
+          <a href="#polityka">Polityka prywatności</a>
+        </div>
+      </nav>
+
+      <main id="start">
+        <section class="hero" aria-labelledby="hero-title">
+          <p class="eyebrow">Białystok i Podlasie 2026</p>
+          <h1 id="hero-title">Muzyka<br />naszych<br />czasów</h1>
+        </section>
+
+        <section class="events" id="program" aria-labelledby="events-title">
+          <h2 id="events-title"><span class="desktop-word">Najbliższe</span><span class="mobile-word">Najbliższy</span><br />koncert<span class="desktop-word">y</span></h2>
+
+          <div class="events-grid">
+            <a class="event-card event-card--one" href="#wydarzenie-1">
+              <div class="event-meta">
+                <span>DD.MM</span>
+                <span>HH:MM</span>
+              </div>
+              <p class="event-kind">Koncert</p>
+              <h3>Tytuł wydarzenia</h3>
+              <div class="event-details">
+                <div>
+                  <p class="mobile-only">Miejsce</p>
+                  <p class="desktop-only">Artyści i instrumenty</p>
+                  <p class="mobile-only">Wykonawcy</p>
+                  <p class="desktop-only">Miejsce, miejscowość</p>
+                  <p class="entry">Zasady wstępu</p>
+                </div>
+                <img src="assets/arrow.svg" alt="" />
+              </div>
+            </a>
+
+            <a class="event-card event-card--two" href="#wydarzenie-2">
+              <div class="event-meta">
+                <span>DD.MM</span>
+                <span>HH:MM</span>
+              </div>
+              <p class="event-kind">Koncert + spotkanie</p>
+              <h3>Tytuł wydarzenia</h3>
+              <div class="event-details">
+                <div>
+                  <p>Artyści i instrumenty</p>
+                  <p>Miejsce, miejscowość</p>
+                  <p class="entry">Zasady wstępu</p>
+                </div>
+                <img src="assets/arrow.svg" alt="" />
+              </div>
+            </a>
+
+            <a class="event-card event-card--three" href="#wydarzenie-3">
+              <div class="event-meta">
+                <span>DD.MM</span>
+                <span>HH:MM</span>
+              </div>
+              <p class="event-kind">Koncert</p>
+              <h3>Tytuł wydarzenia</h3>
+              <div class="event-details">
+                <div>
+                  <p>Artyści i instrumenty</p>
+                  <p>Miejsce, miejscowość</p>
+                  <p class="entry">Zasady wstępu</p>
+                </div>
+                <img src="assets/arrow.svg" alt="" />
+              </div>
+            </a>
+
+            <a class="event-action event-action--entry" href="#informacje">
+              <span aria-hidden="true">→</span>
+              <span>Zasady<br />wstępu</span>
+            </a>
+            <a class="event-action event-action--program" href="#program">
+              <span aria-hidden="true">→</span>
+              <span>Zobacz<br />program</span>
+            </a>
+          </div>
+        </section>
+
+        <nav class="section-links" aria-label="Pozostałe części serwisu">
+          <a id="o-festiwalu" href="#o-festiwalu">
+            <span>Poznaj festiwal</span>
+            <img src="assets/figma-arrow-row.svg" alt="" />
+          </a>
+          <a id="galeria" href="#galeria">
+            <span>Zobacz i posłuchaj</span>
+            <img src="assets/figma-arrow-row.svg" alt="" />
+          </a>
+          <a id="archiwum" href="#archiwum">
+            <span>Poprzednie edycje</span>
+            <img src="assets/figma-arrow-row.svg" alt="" />
+          </a>
+        </nav>
+      </main>
+
+      <footer class="site-footer" id="kontakt">
+        <div class="foundation">Fundacja<br />Armonia<br />dell’arte</div>
+        <a href="#kontakt">Kontakt</a>
+        <a id="facebook" href="#facebook">Facebook</a>
+        <a id="polityka" href="#polityka">Polityka prywatności</a>
+      </footer>
+
+      <span id="informacje" class="anchor"></span>
+      <span id="wydarzenie-1" class="anchor"></span>
+      <span id="wydarzenie-2" class="anchor"></span>
+      <span id="wydarzenie-3" class="anchor"></span>
+    </div>
+  </body>
+</html>
