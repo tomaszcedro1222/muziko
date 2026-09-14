@@ -795,38 +795,50 @@ a {
 .subpage-artwork {
   position: absolute;
   z-index: -2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   pointer-events: none;
 }
 
 .subpage-artwork img {
   display: block;
-  width: 1901.927px;
-  height: 2256.471px;
+  flex: 0 0 auto;
   max-width: none;
   object-fit: cover;
 }
 
 .program-page .subpage-artwork {
-  top: -613px;
-  left: -6px;
+  top: -1003.06px;
+  left: 242.27px;
+  width: 2353.629px;
+  height: 2621.04px;
 }
 
 .program-page .subpage-artwork img {
-  transform: rotate(-17.89deg);
+  width: 1901.927px;
+  height: 2256.471px;
+  transform: rotate(-167.23deg) scaleY(-1);
 }
 
 .about-page .subpage-artwork {
-  top: -1041px;
-  left: 182px;
+  top: -1041.28px;
+  left: 182.06px;
+  width: 2925.279px;
+  height: 2948.999px;
 }
 
 .about-page .subpage-artwork img {
+  width: 1901.927px;
+  height: 2256.471px;
   transform: rotate(137.71deg);
 }
 
 .gallery-page .subpage-artwork {
-  top: -1121px;
-  left: 52px;
+  top: -1120.63px;
+  left: 52.2px;
+  width: 1728.241px;
+  height: 1953.451px;
 }
 
 .gallery-page .subpage-artwork img {
@@ -836,8 +848,10 @@ a {
 }
 
 .info-page .subpage-artwork {
-  top: -584px;
-  left: 327px;
+  top: -583.79px;
+  left: 326.91px;
+  width: 2535.115px;
+  height: 2407.586px;
 }
 
 .info-page .subpage-artwork img {
@@ -847,8 +861,10 @@ a {
 }
 
 .contact-page .subpage-artwork {
-  top: -1337px;
-  left: 35px;
+  top: -1336.52px;
+  left: 35.48px;
+  width: 2239.448px;
+  height: 2140.427px;
 }
 
 .contact-page .subpage-artwork img {
@@ -1358,17 +1374,21 @@ a {
   }
 
   .program-page .subpage-artwork {
-    top: -295px;
-    left: -43px;
+    top: -399.33px;
+    left: 39.82px;
+    width: 991.737px;
+    height: 1076.298px;
   }
 
   .program-page .subpage-artwork img {
-    transform: rotate(-27.61deg);
+    transform: rotate(-160.62deg) scaleY(-1);
   }
 
   .about-page .subpage-artwork {
-    top: -318px;
-    left: 10px;
+    top: -317.75px;
+    left: 10.22px;
+    width: 1119.062px;
+    height: 1148.452px;
   }
 
   .about-page .subpage-artwork img {
@@ -1376,8 +1396,10 @@ a {
   }
 
   .gallery-page .subpage-artwork {
-    top: -143px;
-    left: 134px;
+    top: -142.98px;
+    left: 134.35px;
+    width: 810.805px;
+    height: 937.388px;
   }
 
   .gallery-page .subpage-artwork img {
@@ -1387,8 +1409,10 @@ a {
   }
 
   .info-page .subpage-artwork {
-    top: -298px;
-    left: 17px;
+    top: -298.18px;
+    left: 16.78px;
+    width: 1125.944px;
+    height: 1069.303px;
   }
 
   .info-page .subpage-artwork img {
@@ -1398,8 +1422,10 @@ a {
   }
 
   .contact-page .subpage-artwork {
-    top: -307px;
-    left: -26px;
+    top: -306.84px;
+    left: -25.79px;
+    width: 1143.523px;
+    height: 1149.108px;
   }
 
   .contact-page .subpage-artwork img {
