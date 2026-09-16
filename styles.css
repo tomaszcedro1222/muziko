@@ -1368,70 +1368,55 @@ a {
     min-height: 100vh;
   }
 
+  /* Figma exports below already include the final rotation and page clipping. */
+  .subpage-artwork {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
   .subpage-artwork img {
-    width: 741.761px;
-    height: 880.035px;
+    display: none;
   }
 
   .program-page .subpage-artwork {
-    top: -399.33px;
+    top: 0;
     left: 39.82px;
-    width: 991.737px;
-    height: 1076.298px;
-  }
-
-  .program-page .subpage-artwork img {
-    transform: rotate(-160.62deg) scaleY(-1);
+    width: 336px;
+    height: 677px;
+    background-image: url("assets/mobile-bg-program.png");
   }
 
   .about-page .subpage-artwork {
-    top: -317.75px;
+    top: 0;
     left: 10.22px;
-    width: 1119.062px;
-    height: 1148.452px;
-  }
-
-  .about-page .subpage-artwork img {
-    transform: rotate(143.64deg);
+    width: 365px;
+    height: 831px;
+    background-image: url("assets/mobile-bg-about.png");
   }
 
   .gallery-page .subpage-artwork {
-    top: -142.98px;
+    top: 0;
     left: 134.35px;
-    width: 810.805px;
-    height: 937.388px;
-  }
-
-  .gallery-page .subpage-artwork img {
-    width: 741.761px;
-    height: 880.035px;
-    transform: rotate(-4.66deg);
+    width: 241px;
+    height: 795px;
+    background-image: url("assets/mobile-bg-gallery.png");
   }
 
   .info-page .subpage-artwork {
-    top: -298.18px;
+    top: 0;
     left: 16.78px;
-    width: 1125.944px;
-    height: 1069.303px;
-  }
-
-  .info-page .subpage-artwork img {
-    width: 741.761px;
-    height: 880.035px;
-    transform: rotate(-61.84deg);
+    width: 359px;
+    height: 772px;
+    background-image: url("assets/mobile-bg-info.png");
   }
 
   .contact-page .subpage-artwork {
-    top: -306.84px;
-    left: -25.79px;
-    width: 1143.523px;
-    height: 1149.108px;
-  }
-
-  .contact-page .subpage-artwork img {
-    width: 741.761px;
-    height: 880.035px;
-    transform: rotate(136.64deg);
+    top: 0;
+    left: 0;
+    width: 375px;
+    height: 736px;
+    background-image: url("assets/mobile-bg-contact.png");
   }
 
   .subpage-main {
