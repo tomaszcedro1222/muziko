@@ -130,8 +130,8 @@ a {
 
 .top-fade {
   top: 0;
-  left: var(--canvas-offset);
-  width: min(100%, 1280px);
+  left: 0;
+  width: 100%;
   height: 284.46px;
   overflow: hidden;
   background: linear-gradient(180deg, rgba(8, 8, 16, 0.62) 0%, rgba(8, 8, 16, 0.3) 52%, rgba(8, 8, 16, 0) 100%);
