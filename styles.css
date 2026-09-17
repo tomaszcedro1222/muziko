@@ -202,7 +202,11 @@ a {
 }
 
 .desktop-nav a:hover,
-.desktop-nav a:focus-visible,
+.desktop-nav a:focus-visible {
+  background: var(--paper);
+  color: var(--ink);
+}
+
 .section-links a:hover,
 .section-links a:focus-visible {
   color: #b9ff4a;
