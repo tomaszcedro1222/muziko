@@ -353,8 +353,9 @@ a {
 .event-details img {
   display: block;
   width: 27.004px;
-  height: 24.72px;
+  height: auto;
   flex: 0 0 auto;
+  filter: brightness(0);
 }
 
 .event-action {
@@ -378,20 +379,12 @@ a {
   transform: translateY(-2px);
 }
 
-.event-action > span:first-child {
-  display: grid;
+.event-action > .cta-icon {
+  display: block;
   width: 16px;
-  height: 16px;
+  height: auto;
   flex: 0 0 auto;
-  align-self: flex-start;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--paper);
-  color: var(--violet);
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 900;
-  line-height: 1;
+  align-self: center;
 }
 
 .event-action--entry {
@@ -431,8 +424,8 @@ a {
 
 .section-links img {
   display: block;
-  width: 47.004px;
-  height: 24.72px;
+  width: 27.004px;
+  height: auto;
 }
 
 .section-links span {
@@ -720,9 +713,8 @@ a {
     line-height: 1.25;
   }
 
-  .event-action > span:first-child {
+  .event-action > .cta-icon {
     align-self: center;
-    font-size: 12px;
   }
 
   .event-action--program {
@@ -1022,7 +1014,7 @@ a {
 
 .load-more button img {
   width: 27px;
-  height: 25px;
+  height: auto;
   transform: rotate(90deg);
 }
 
@@ -1036,6 +1028,7 @@ a {
   min-height: 80px;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   margin: 30px auto 0;
   padding: 20px;
   background: linear-gradient(132deg, var(--violet) 2.2%, var(--ink) 100%);
@@ -1044,6 +1037,13 @@ a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.wide-cta > .cta-icon {
+  display: block;
+  width: 22px;
+  height: auto;
+  flex: 0 0 auto;
 }
 
 .wide-cta:hover,
@@ -1170,6 +1170,7 @@ a {
   min-height: 60px;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   padding: 10px 20px;
   background: linear-gradient(143deg, var(--violet) 2.2%, var(--ink) 100%);
   font-size: 16px;
@@ -1177,6 +1178,13 @@ a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.archive-card a > .cta-icon {
+  display: block;
+  width: 20px;
+  height: auto;
+  flex: 0 0 auto;
 }
 
 .archive-page .site-footer {
@@ -1301,21 +1309,16 @@ a {
   display: none;
 }
 
-.faq summary span {
-  display: grid;
+.faq summary .faq-icon {
+  display: block;
   width: 22px;
-  height: 22px;
+  height: auto;
   flex: 0 0 auto;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--paper);
-  color: var(--ink);
-  font-size: 22px;
-  font-weight: 900;
-  line-height: 1;
+  transform-origin: center;
+  transition: transform 160ms ease;
 }
 
-.faq details[open] summary span {
+.faq details[open] summary .faq-icon {
   transform: rotate(45deg);
 }
 
@@ -1943,18 +1946,11 @@ a {
   text-transform: uppercase;
 }
 
-.event-location > span:first-child {
-  display: grid;
+.event-location > .cta-icon {
+  display: block;
   width: 14px;
-  height: 14px;
-  place-items: center;
-  border-radius: 50%;
-  background: var(--paper);
-  color: var(--violet);
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  font-weight: 900;
-  line-height: 1;
+  height: auto;
+  flex: 0 0 auto;
 }
 
 .event-location:hover,
