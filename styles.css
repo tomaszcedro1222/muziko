@@ -130,18 +130,15 @@ a {
 
 .top-fade {
   top: 0;
-  left: 0;
-  width: 100%;
+  left: var(--canvas-offset);
+  width: min(100%, 1280px);
   height: 284.46px;
   overflow: hidden;
+  background: linear-gradient(180deg, rgba(8, 8, 16, 0.62) 0%, rgba(8, 8, 16, 0.3) 52%, rgba(8, 8, 16, 0) 100%);
 }
 
 .top-fade img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: scaleY(-1);
+  display: none;
 }
 
 .site-header {
@@ -403,7 +400,7 @@ a {
   top: 1083.46px;
   left: 0;
   width: 100%;
-  padding-top: 20px;
+  padding: 20px var(--page-gutter) 0;
   background: var(--ink);
 }
 
@@ -412,7 +409,7 @@ a {
   height: 65px;
   align-items: center;
   justify-content: space-between;
-  padding: 20px var(--page-gutter);
+  padding: 20px 0;
   border-top: 1px solid var(--paper);
   font-size: 20px;
   line-height: 1.25;
@@ -730,7 +727,7 @@ a {
 
   .section-links {
     top: 794.72px;
-    padding-top: 0;
+    padding: 0;
   }
 
   .section-links a {
@@ -1282,9 +1279,13 @@ a {
   padding: 20px var(--page-gutter);
 }
 
+.faq {
+  padding-inline: var(--page-gutter);
+}
+
 .faq h2 {
   min-height: 90px;
-  padding: 20px var(--page-gutter);
+  padding: 20px 0;
 }
 
 .faq details {
@@ -1301,7 +1302,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 20px var(--page-gutter);
+  padding: 20px 0;
   cursor: pointer;
   font-size: 16px;
   line-height: 1.25;
@@ -1327,8 +1328,8 @@ a {
 
 .faq details p {
   max-width: 700px;
-  margin: 0 0 0 var(--canvas-offset);
-  padding: 0 40px 20px;
+  margin: 0;
+  padding: 0 0 20px;
   font-size: 16px;
   line-height: 1.4;
 }
@@ -1693,18 +1694,22 @@ a {
     margin-top: 10px;
   }
 
+  .faq {
+    padding-inline: 20px;
+  }
+
   .faq h2 {
     min-height: 90px;
-    padding: 20px;
+    padding: 20px 0;
   }
 
   .faq summary {
     min-height: 52px;
-    padding: 15px 20px;
+    padding: 15px 0;
   }
 
   .faq details p {
-    padding: 0 20px 15px;
+    padding: 0 0 15px;
   }
 
   .contact-page .page-hero {
