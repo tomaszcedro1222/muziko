@@ -51,3 +51,20 @@ document.querySelectorAll('.filter-tabs').forEach((tabs) => {
     });
   });
 });
+
+document.querySelectorAll('.artist-card__visual').forEach((button) => {
+  button.addEventListener('click', () => {
+    if (!window.matchMedia('(max-width: 800px)').matches) return;
+
+    const card = button.closest('.artist-card');
+    const willExpand = !card.classList.contains('is-expanded');
+
+    document.querySelectorAll('.artist-card.is-expanded').forEach((item) => {
+      item.classList.remove('is-expanded');
+      item.querySelector('.artist-card__visual')?.setAttribute('aria-expanded', 'false');
+    });
+
+    card.classList.toggle('is-expanded', willExpand);
+    button.setAttribute('aria-expanded', String(willExpand));
+  });
+});

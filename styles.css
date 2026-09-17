@@ -859,7 +859,15 @@ a {
   height: 2140.427px;
 }
 
-.contact-page .subpage-artwork img {
+.artists-page .subpage-artwork {
+  top: -1336.52px;
+  left: calc(var(--canvas-offset) + 35.48px);
+  width: 2239.448px;
+  height: 2140.427px;
+}
+
+.contact-page .subpage-artwork img,
+.artists-page .subpage-artwork img {
   width: 1465.446px;
   height: 1738.625px;
   transform: rotate(59.85deg);
@@ -1255,6 +1263,110 @@ a {
   margin-top: 60px;
 }
 
+/* Artyści — widok i stan hover z Figmy */
+.artists-shell {
+  min-height: 1882px;
+}
+
+.artists-page .page-hero {
+  min-height: 201.54px;
+}
+
+.artists-directory {
+  padding: 20px max(60px, calc(50vw - 580px)) 0;
+}
+
+.artists-directory__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.artist-card {
+  min-width: 0;
+}
+
+.artist-card__visual {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  aspect-ratio: 1;
+  cursor: pointer;
+  border: 0;
+  background: var(--ink);
+  color: var(--paper);
+  font: inherit;
+  text-align: left;
+}
+
+.artist-card__visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 220ms ease;
+}
+
+.artist-card__shade,
+.artist-card__bio {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.artist-card__shade {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.artist-card__bio {
+  z-index: 1;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.artist-card__visual:focus-visible {
+  outline: 2px solid var(--paper);
+  outline-offset: 3px;
+}
+
+.artist-card h2 {
+  margin: 10px 0 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.artist-card > p {
+  margin: 2px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.artists-page .site-footer {
+  margin-top: 30px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .artist-card__visual:hover .artist-card__shade,
+  .artist-card__visual:hover .artist-card__bio,
+  .artist-card__visual:focus-visible .artist-card__shade,
+  .artist-card__visual:focus-visible .artist-card__bio {
+    opacity: 1;
+  }
+
+  .artist-card__visual:hover img,
+  .artist-card__visual:focus-visible img {
+    transform: scale(1.015);
+  }
+}
+
 /* Album zdjęć — osobny widok galerii z Figmy */
 .album-shell {
   min-height: 1669px;
@@ -1520,6 +1632,14 @@ a {
     background-image: url("assets/mobile-bg-contact.png");
   }
 
+  .artists-page .subpage-artwork {
+    top: 0;
+    left: 0;
+    width: 375px;
+    height: 736px;
+    background-image: url("assets/mobile-bg-contact.png");
+  }
+
   .subpage-main {
     padding-top: 125.71px;
   }
@@ -1766,6 +1886,48 @@ a {
 
   .gallery-more {
     display: none;
+  }
+
+  .artists-shell {
+    min-height: 100vh;
+  }
+
+  .artists-page .page-hero {
+    min-height: 0;
+  }
+
+  .artists-directory {
+    padding: 0 20px;
+  }
+
+  .artists-directory__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .artist-card h2 {
+    font-size: 12px;
+  }
+
+  .artist-card > p {
+    font-size: 9px;
+  }
+
+  .artist-card.is-expanded {
+    grid-column: 1 / -1;
+  }
+
+  .artist-card.is-expanded .artist-card__shade,
+  .artist-card.is-expanded .artist-card__bio {
+    opacity: 1;
+  }
+
+  .artist-card.is-expanded .artist-card__bio {
+    font-size: 14px;
+  }
+
+  .artists-page .site-footer {
+    margin-top: 20px;
   }
 
   .album-shell {
