@@ -35,6 +35,7 @@
   --paper: #ffffff;
   --violet: #4019e4;
   --display: "Monument Extended", "Arial Black", Arial, sans-serif;
+  --display-tracking: 0.02em;
   --sans: Inter, Arial, Helvetica, sans-serif;
 }
 
@@ -182,12 +183,12 @@ a {
 .mobile-menu__links {
   font-family: var(--display);
   font-weight: 400;
+  letter-spacing: var(--display-tracking);
 }
 
 .desktop-nav a {
   padding: 2px 6px;
   font-size: 16px;
-  letter-spacing: -0.035em;
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
@@ -230,7 +231,6 @@ a {
   width: fit-content;
   margin: 0 0 10px;
   font-size: 20px;
-  letter-spacing: -0.03em;
   line-height: 1.25;
   text-transform: uppercase;
   white-space: nowrap;
@@ -240,7 +240,6 @@ a {
   width: fit-content;
   margin: 0;
   font-size: 90px;
-  letter-spacing: -0.05em;
   line-height: 1.18;
 }
 
@@ -256,7 +255,6 @@ a {
 .events h2 {
   margin: 0 0 20px;
   font-size: 20px;
-  letter-spacing: -0.035em;
   line-height: 1.25;
   text-shadow: 0 4px 34px rgba(0, 0, 0, 0.35);
   text-transform: uppercase;
@@ -368,7 +366,6 @@ a {
   padding: 20px;
   background: linear-gradient(123deg, var(--violet) 2.2%, var(--ink) 100%);
   font-size: 20px;
-  letter-spacing: -0.035em;
   line-height: 1.05;
   text-align: center;
   text-decoration: none;
@@ -423,7 +420,6 @@ a {
   padding: 20px 40px;
   border-top: 1px solid var(--paper);
   font-size: 20px;
-  letter-spacing: -0.035em;
   line-height: 1.25;
   text-decoration: none;
   text-transform: uppercase;
@@ -625,7 +621,6 @@ a {
   .mobile-menu__links a {
     width: fit-content;
     font-size: 22px;
-    letter-spacing: -0.04em;
     line-height: 1.25;
     text-decoration: none;
     text-transform: uppercase;
@@ -653,14 +648,12 @@ a {
   .eyebrow {
     margin-bottom: 10px;
     font-size: 16px;
-    letter-spacing: -0.035em;
   }
 
   .hero h1 {
     width: fit-content;
     max-width: none;
     font-size: 42px;
-    letter-spacing: -0.045em;
     line-height: 1.18;
   }
 
@@ -911,13 +904,13 @@ a {
 .filter-tabs button {
   font-family: var(--display);
   font-weight: 400;
+  letter-spacing: var(--display-tracking);
 }
 
 .page-hero h1 {
   width: fit-content;
   margin: 0;
   font-size: 60px;
-  letter-spacing: -0.02em;
   line-height: 1.18;
 }
 
@@ -934,7 +927,6 @@ a {
 .contact-grid h2 {
   margin: 0;
   font-size: 20px;
-  letter-spacing: -0.035em;
   line-height: 1.25;
   text-transform: uppercase;
 }
@@ -1439,7 +1431,6 @@ a {
 
   .page-hero h1 {
     font-size: 32px;
-    letter-spacing: -0.02em;
   }
 
   .page-lead {
@@ -1802,13 +1793,13 @@ a {
 .event-location {
   font-family: var(--display);
   font-weight: 400;
+  letter-spacing: var(--display-tracking);
 }
 
 .event-hero h1 {
   width: fit-content;
   margin: 0;
   font-size: 60px;
-  letter-spacing: -0.02em;
   line-height: 1.18;
 }
 
@@ -1880,7 +1871,6 @@ a {
 .event-companion > h2 {
   margin: 0;
   font-size: 16px;
-  letter-spacing: -0.035em;
   line-height: 1.25;
   text-transform: uppercase;
 }
