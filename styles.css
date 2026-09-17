@@ -130,8 +130,9 @@ a {
 
 .top-fade {
   top: 0;
+  right: auto;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 284.46px;
   overflow: hidden;
   background: linear-gradient(180deg, rgba(8, 8, 16, 0.62) 0%, rgba(8, 8, 16, 0.3) 52%, rgba(8, 8, 16, 0) 100%);
