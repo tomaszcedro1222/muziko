@@ -1255,6 +1255,98 @@ a {
   margin-top: 60px;
 }
 
+/* Album zdjęć — osobny widok galerii z Figmy */
+.album-shell {
+  min-height: 1669px;
+}
+
+.album-main {
+  position: relative;
+  z-index: 2;
+  padding-top: 213.46px;
+}
+
+.album-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px var(--page-gutter);
+}
+
+.album-kicker {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.album-hero h1 {
+  margin: 0;
+  font-family: var(--display);
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: var(--display-tracking);
+  line-height: 1.18;
+}
+
+.album-hero h1 span {
+  display: block;
+}
+
+.album-tags {
+  display: flex;
+  gap: 6px;
+}
+
+.album-tags span {
+  padding: 1px 6px;
+  background: var(--paper);
+  color: var(--ink);
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.album-gallery {
+  margin-top: 58.4px;
+  padding: 20px var(--page-gutter);
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(3, 320px);
+  gap: 20px;
+}
+
+.album-photo {
+  min-width: 0;
+  margin: 0;
+}
+
+.album-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.album-photo--1 { grid-area: 1 / 1; }
+.album-photo--2 { grid-area: 1 / 2; }
+.album-photo--3 { grid-area: 2 / 2; }
+.album-photo--4 { grid-area: 2 / 1; }
+.album-photo--repeat { grid-area: 3 / 1; }
+.album-photo--5 { grid-area: 3 / 2; }
+
+.gallery-album-page .site-footer {
+  margin-top: 30px;
+}
+
 .info-content {
   position: relative;
 }
@@ -1674,6 +1766,60 @@ a {
 
   .gallery-more {
     display: none;
+  }
+
+  .album-shell {
+    min-height: 100vh;
+  }
+
+  .album-main {
+    padding-top: 125.71px;
+  }
+
+  .album-hero {
+    padding: 10px 20px;
+  }
+
+  .album-kicker {
+    font-size: 10px;
+  }
+
+  .album-hero h1 {
+    width: 326.5px;
+    max-width: 100%;
+    font-size: 32px;
+  }
+
+  .album-tags span {
+    font-size: 14px;
+  }
+
+  .album-gallery {
+    margin-top: 0;
+    padding: 20px;
+  }
+
+  .album-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .album-photo {
+    width: 100%;
+    height: 220px;
+  }
+
+  .album-photo--3 { order: 3; }
+  .album-photo--4 { order: 4; }
+  .album-photo--5 { order: 5; }
+
+  .album-photo--repeat {
+    display: none;
+  }
+
+  .gallery-album-page .site-footer {
+    margin-top: 20px;
   }
 
   .info-page .page-hero {
