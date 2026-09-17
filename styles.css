@@ -34,6 +34,8 @@
   --ink: #080810;
   --paper: #ffffff;
   --violet: #4019e4;
+  --canvas-offset: max(0px, calc(50vw - 640px));
+  --page-gutter: max(40px, calc(50vw - 600px));
   --display: "Monument Extended", "Arial Black", Arial, sans-serif;
   --display-tracking: 0.02em;
   --sans: Inter, Arial, Helvetica, sans-serif;
@@ -105,7 +107,7 @@ a {
 
 .artwork--hero {
   top: -613.34px;
-  left: -6.15px;
+  left: calc(var(--canvas-offset) - 6.15px);
   display: flex;
   width: 2503.118px;
   height: 2731.61px;
@@ -151,7 +153,7 @@ a {
   width: 100%;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 40px;
+  padding: 40px var(--page-gutter);
 }
 
 .brand {
@@ -223,7 +225,7 @@ a {
   z-index: 2;
   top: 213.46px;
   left: 0;
-  padding: 10px 40px;
+  padding: 10px var(--page-gutter);
   text-shadow: 0 0 17px rgba(0, 0, 0, 0.35);
 }
 
@@ -249,7 +251,7 @@ a {
   top: 616.46px;
   left: 0;
   width: 100%;
-  padding: 20px 40px;
+  padding: 20px var(--page-gutter);
 }
 
 .events h2 {
@@ -410,7 +412,7 @@ a {
   height: 65px;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px;
+  padding: 20px var(--page-gutter);
   border-top: 1px solid var(--paper);
   font-size: 20px;
   line-height: 1.25;
@@ -449,7 +451,7 @@ a {
   height: 95.54px;
   align-items: flex-end;
   justify-content: space-between;
-  padding: 40px;
+  padding: 40px var(--page-gutter);
   background: var(--ink);
 }
 
@@ -799,7 +801,7 @@ a {
 
 .program-page .subpage-artwork {
   top: -1003.06px;
-  left: 242.27px;
+  left: calc(var(--canvas-offset) + 242.27px);
   width: 2353.629px;
   height: 2621.04px;
 }
@@ -812,7 +814,7 @@ a {
 
 .about-page .subpage-artwork {
   top: -1041.28px;
-  left: 182.06px;
+  left: calc(var(--canvas-offset) + 182.06px);
   width: 2925.279px;
   height: 2948.999px;
 }
@@ -825,7 +827,7 @@ a {
 
 .gallery-page .subpage-artwork {
   top: -1120.63px;
-  left: 52.2px;
+  left: calc(var(--canvas-offset) + 52.2px);
   width: 1728.241px;
   height: 1953.451px;
 }
@@ -838,7 +840,7 @@ a {
 
 .info-page .subpage-artwork {
   top: -583.79px;
-  left: 326.91px;
+  left: calc(var(--canvas-offset) + 326.91px);
   width: 2535.115px;
   height: 2407.586px;
 }
@@ -851,7 +853,7 @@ a {
 
 .contact-page .subpage-artwork {
   top: -1336.52px;
-  left: 35.48px;
+  left: calc(var(--canvas-offset) + 35.48px);
   width: 2239.448px;
   height: 2140.427px;
 }
@@ -869,7 +871,7 @@ a {
 }
 
 .page-hero {
-  padding: 10px 40px;
+  padding: 10px var(--page-gutter);
   color: var(--paper);
   text-shadow: 0 0 17px rgba(0, 0, 0, 0.35);
 }
@@ -944,7 +946,7 @@ a {
 }
 
 .program-list {
-  padding: 20px 40px 0;
+  padding: 20px var(--page-gutter) 0;
 }
 
 .filter-tabs {
@@ -1066,7 +1068,7 @@ a {
 
 .about-visual {
   height: 560px;
-  padding: 20px 40px;
+  padding: 20px var(--page-gutter);
 }
 
 .about-visual img {
@@ -1084,7 +1086,7 @@ a {
     "foundation director";
   gap: 20px;
   row-gap: 60px;
-  padding: 20px 40px;
+  padding: 20px var(--page-gutter);
 }
 
 .about-grid > * {
@@ -1136,7 +1138,7 @@ a {
 }
 
 .partners-block {
-  padding: 20px 40px;
+  padding: 20px var(--page-gutter);
 }
 
 .archive-page .page-hero,
@@ -1148,7 +1150,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
-  padding: 20px 40px;
+  padding: 20px var(--page-gutter);
 }
 
 .archive-card {
@@ -1196,7 +1198,7 @@ a {
 }
 
 .gallery-section {
-  padding: 20px 40px 0;
+  padding: 20px var(--page-gutter) 0;
 }
 
 .gallery-tabs {
@@ -1259,12 +1261,13 @@ a {
 .participation {
   width: 590px;
   min-height: 125px;
+  margin-left: var(--canvas-offset);
   padding: 20px 40px;
 }
 
 .venues {
   min-height: 630px;
-  padding: 20px 40px;
+  padding: 20px var(--page-gutter);
 }
 
 .venue-map {
@@ -1276,12 +1279,12 @@ a {
 }
 
 .foundation-block {
-  padding: 20px 40px;
+  padding: 20px var(--page-gutter);
 }
 
 .faq h2 {
   min-height: 90px;
-  padding: 20px 40px;
+  padding: 20px var(--page-gutter);
 }
 
 .faq details {
@@ -1298,7 +1301,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 20px 40px;
+  padding: 20px var(--page-gutter);
   cursor: pointer;
   font-size: 16px;
   line-height: 1.25;
@@ -1324,7 +1327,7 @@ a {
 
 .faq details p {
   max-width: 700px;
-  margin: 0;
+  margin: 0 0 0 var(--canvas-offset);
   padding: 0 40px 20px;
   font-size: 16px;
   line-height: 1.4;
@@ -1335,7 +1338,7 @@ a {
   min-height: 286px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
-  padding: 0 40px;
+  padding: 0 var(--page-gutter);
 }
 
 .contact-grid section {
@@ -1747,7 +1750,7 @@ a {
 
 .event-page .subpage-artwork {
   top: -350px;
-  left: 360px;
+  left: calc(var(--canvas-offset) + 360px);
   width: 1780px;
   height: 2050px;
 }
@@ -1765,7 +1768,7 @@ a {
 }
 
 .event-hero {
-  padding: 10px 40px 20px;
+  padding: 10px var(--page-gutter) 20px;
   color: var(--paper);
   text-shadow: 0 0 17px rgba(0, 0, 0, 0.35);
 }
@@ -1833,7 +1836,7 @@ a {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: start;
   gap: 20px;
-  padding: 20px 40px 0;
+  padding: 20px var(--page-gutter) 0;
 }
 
 .event-cover {
