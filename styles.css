@@ -1595,49 +1595,49 @@ a {
 
   .program-page .subpage-artwork {
     top: 0;
-    left: 39.82px;
-    width: 336px;
-    height: 677px;
+    left: 10.6187vw;
+    width: 89.6vw;
+    height: 180.5333vw;
     background-image: url("assets/mobile-bg-program.png");
   }
 
   .about-page .subpage-artwork {
     top: 0;
-    left: 10.22px;
-    width: 365px;
-    height: 831px;
+    left: 2.7253vw;
+    width: 97.3333vw;
+    height: 221.6vw;
     background-image: url("assets/mobile-bg-about.png");
   }
 
   .gallery-page .subpage-artwork {
     top: 0;
-    left: 134.35px;
-    width: 241px;
-    height: 795px;
+    left: 35.8267vw;
+    width: 64.2667vw;
+    height: 212vw;
     background-image: url("assets/mobile-bg-gallery.png");
   }
 
   .info-page .subpage-artwork {
     top: 0;
-    left: 16.78px;
-    width: 359px;
-    height: 772px;
+    left: 4.4747vw;
+    width: 95.7333vw;
+    height: 205.8667vw;
     background-image: url("assets/mobile-bg-info.png");
   }
 
   .contact-page .subpage-artwork {
     top: 0;
     left: 0;
-    width: 375px;
-    height: 736px;
+    width: 100vw;
+    height: 196.2667vw;
     background-image: url("assets/mobile-bg-contact.png");
   }
 
   .artists-page .subpage-artwork {
     top: 0;
     left: 0;
-    width: 375px;
-    height: 736px;
+    width: 100vw;
+    height: 196.2667vw;
     background-image: url("assets/mobile-bg-contact.png");
   }
 
@@ -2368,9 +2368,9 @@ a {
 @media (max-width: 800px) {
   .event-page .subpage-artwork {
     top: 0;
-    left: 134.35px;
-    width: 241px;
-    height: 795px;
+    left: 35.8267vw;
+    width: 64.2667vw;
+    height: 212vw;
     background-image: url("assets/mobile-bg-gallery.png");
   }
 
